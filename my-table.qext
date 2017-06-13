@@ -1,0 +1,7 @@
+{
+	"name": "My Table",
+	"type": "visualization",
+	"description": "My first extension",
+	"version": "0.0.1",
+	"author": "YOUR NAME GOES HERE"
+}
