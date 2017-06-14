@@ -65,8 +65,6 @@ define([], function() {
 					td.setAttribute("dim-col",col);
 					td.setAttribute("dim-index", currentCell.qElemNumber);
 				}
-
-                td.style.color = textColor;
 				
 				// Append the cell to the row
 				tr.appendChild(td);
@@ -89,5 +87,8 @@ define([], function() {
 			// Call selectValues with these values
 			backendApi.selectValues(dimCol, [dimInd],true);
 		});
+
+        // Color the table
+        table.style.color = textColor;
     };
 });
