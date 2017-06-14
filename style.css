@@ -32,3 +32,9 @@
 .qv-object-my-table .measureCell {
 	text-align: right;
 }
+
+@media (max-width: 480px) {
+	.qv-object-my-table table {
+		font-size: 32px;
+	}
+}
