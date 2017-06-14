@@ -48,14 +48,14 @@ define([], function() {
 			var currentRow = qMatrix[row];
 			// Create a row
 			var tr = document.createElement("tr");
-			// Iterate through each column of the row
-			for(var col = 0; col < currentRow.length; col++) {
-				// Get current cell data
-				var currentCell = currentRow[col];
-				// Create a cell
-				var td = document.createElement("td");
-				// Add text value to the cell
-				td.innerHTML = currentCell.qText;
+            // Iterate through each column of the row
+            for(var col = 0; col < currentRow.length; col++) {
+                // Get current cell data
+                var currentCell = currentRow[col];
+                // Create a cell
+                var td = document.createElement("td");
+                // Add text value to the cell
+                td.innerHTML = currentCell.qText;
 				
 				// Check if dimension, then add metadata
 				if(col < dimensionInfo.length) {
@@ -65,8 +65,6 @@ define([], function() {
 					td.setAttribute("dim-col",col);
 					td.setAttribute("dim-index", currentCell.qElemNumber);
 				}
-
-                td.style.color = textColor;
 				
 				// Append the cell to the row
 				tr.appendChild(td);
@@ -89,5 +87,8 @@ define([], function() {
 			// Call selectValues with these values
 			backendApi.selectValues(dimCol, [dimInd],true);
 		});
+
+        // Color the table
+        table.style.color = textColor;
     };
 });

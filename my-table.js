@@ -1,4 +1,4 @@
-define(["./initialProperties", "./definition", "./paint", "./support", "text!./style.css"], function(myProps, myDefinition, myPaint, mySupport, cssText) {
+define(["./initialProperties", "./definition", "./paint", "./support", "./resize", "text!./style.css"], function(myProps, myDefinition, myPaint, mySupport, myResize, cssText) {
     // Create a style element
 	var style = document.createElement("style");
 	// Set the style element content
@@ -10,7 +10,8 @@ define(["./initialProperties", "./definition", "./paint", "./support", "text!./s
 		initialProperties: myProps,
 		definition: myDefinition,
         paint: myPaint,
-        support: mySupport
+        support: mySupport,
+        resize: myResize
 	};
 });
 
