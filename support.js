@@ -1,6 +1,7 @@
 define([], function() {
     return {
         snapshot: true,
-        exportData: true 
+        exportData: true,
+        export: true
     };
 });
