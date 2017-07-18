@@ -1,3 +1,34 @@
 .qv-object-my-table th {
 	text-align: left;
+	font-weight: bold;
+	color: #737373;
+	font-size: 14px;
+	line-height: 18px;
+	border-bottom: 1px solid #D2CCCC;
+	padding: 0px 6px;
+}
+
+.qv-object-my-table td {
+	text-align: left;
+	font-weight: normal;
+	color: #5A5A5A;
+	font-size: 14px;
+	line-height: 18px;
+	padding: 8px 6px;
+}
+
+.qv-object-my-table tr:nth-child(6n-1) td {
+	background-color: rgba(54,183,207,0.13);
+}
+
+.qv-object-my-table tr:nth-child(6n) td {
+	background-color: rgba(54,183,207,0.13);
+}
+
+.qv-object-my-table tr:nth-child(6n+1) td {
+	background-color: rgba(54,183,207,0.13);
+}
+
+.qv-object-my-table .measureCell {
+	text-align: right;
 }

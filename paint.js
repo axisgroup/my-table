@@ -33,6 +33,8 @@ define([], function() {
             var hCell = document.createElement("th");
             // Set the cell contents to the measure label
             hCell.innerHTML = measureInfo[i].qFallbackTitle;
+            // Set the class as a measure cell
+            hCell.className = "measureCell";
             // Add the cell to the header row
             hRow.appendChild(hCell);
         }
@@ -65,6 +67,10 @@ define([], function() {
 					td.setAttribute("dim-col",col);
 					td.setAttribute("dim-index", currentCell.qElemNumber);
 				}
+                // If a measure cell, set the style
+                else {
+                    td.className = "measureCell";
+                }
 				
 				// Append the cell to the row
 				tr.appendChild(td);
