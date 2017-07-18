@@ -71,7 +71,6 @@ define([], function() {
                 else {
                     td.className = "measureCell";
                 }
-				
 				// Append the cell to the row
 				tr.appendChild(td);
 			}
