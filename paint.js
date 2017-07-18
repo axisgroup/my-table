@@ -31,21 +31,26 @@ define([], function() {
                     render(data[0].qMatrix);
                 });
 
-                // reset background-color of all buttons
-                $element.find("button").css("background-color","");
+                // Remove active class from all buttons
+                $element.find("button").removeClass("active-pg");
 
-                // set clicked button background color
-                evt.target.style.backgroundColor = "deepskyblue";
+                // Add active class to current page button
+                evt.target.className = "active-pg";
             }
         }
+
+        // Create a page label
+        var pageSpan = document.createElement("span");
+        pageSpan.innerHTML = "Page ";
+        $element.append(pageSpan);
 
         // Create a button for each page
         for(var i = 0; i<numberOfPages; i++) {
             var button = document.createElement("button");
-            button.innerHTML = "Page " + (i+1);
+            button.innerHTML = (i+1);
             button.addEventListener("click", fetchPage(i));
             // On init, color the first button
-            if (i === 0) button.style.backgroundColor = "deepskyblue";
+            if (i === 0) button.className = "active-pg";
             $element.append(button);
         }
         
