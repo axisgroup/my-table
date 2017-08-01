@@ -17,15 +17,15 @@
 	padding: 8px 6px;
 }
 
+.qv-object-my-table tr:nth-child(6n-2) td {
+	background-color: rgba(54,183,207,0.13);
+}
+
 .qv-object-my-table tr:nth-child(6n-1) td {
 	background-color: rgba(54,183,207,0.13);
 }
 
 .qv-object-my-table tr:nth-child(6n) td {
-	background-color: rgba(54,183,207,0.13);
-}
-
-.qv-object-my-table tr:nth-child(6n+1) td {
 	background-color: rgba(54,183,207,0.13);
 }
 
